@@ -8,6 +8,16 @@
             <div class="login-form-container">
                 <form class="form-horizontal" role="presentation" id="login-form" autocomplete="off">
                     <div class="form-group">
+                        <label class="control-label" for="mode">Mode: </label>
+                        <div class="controls">
+                            <input type="text" style="display:none;" value="">
+                            <select id="mode" value="" required autofocus>
+                                <option value="Basic">basic</option>
+                                <option value="Credentials">credentials</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label class="control-label" for="user">User: </label>
                         <div class="controls">
                             <input type="text" style="display:none;" value="">
@@ -21,6 +31,11 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <div class="controls">
+                            <input type="checkbox" name="usessh" id="usessh" value="usessh"> Use SSH private key<br>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <div class="buttons-container">
                             <button type="submit" class="btn btn-primary">Connect</button>
                         </div>
@@ -30,3 +45,5 @@
         </div>
     </div>
 </div>
+
+
